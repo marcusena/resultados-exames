@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Americas</title>
+</head>
+
+<body style="background-color: #f5f5f5;margin:0;">
+    <style>
+        .cabecalho-agendamento {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            background-color: transparent;
+            border-radius: 17px;
+            margin-right: 20px;
+            border: 1px solid #E1E1E1;
+            padding: 7px 20px;
+            cursor: pointer;
+            max-width: 226px;
+            height: 2rem;
+        }
+
+        .cabecalho-agendamento p {
+            font-size: 16.5px;
+            margin: 0;
+            width: auto;
+            display: inline-block;
+            flex-grow: 0;
+            max-width: 100%;
+            padding: 0 20px 0 20px;
+        }
+
+        .cabecalho-resultados {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #6C1F77;
+            border-radius: 17px;
+            padding: 20px 40px;
+            margin: 0 0 0 2rem;
+            padding: 7px 20px;
+            cursor: pointer;
+            max-width: 226px;
+            height: 2rem;
+        }
+
+        .cabecalho-resultados p {
+            font-size: 16.5px;
+            margin: 0;
+            width: auto;
+            display: inline-block;
+            flex-grow: 0;
+            max-width: 100%;
+            padding: 0 30px 0 30px;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            font-family: sans-serif;
+            font-weight: bold;
+            margin: 10px;
+            font-size: 1.2rem;
+        }
+
+
+        .cards {
+            margin: 5rem 0;
+            font-family: sans-serif;
+        }
+
+        .card1 {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: white;
+            border: 5px solid #E1E1E1;
+            border-radius: 10px;
+            margin: 0 1rem;
+            padding: 10px 3rem;
+            background-color: white"
+
+        }
+
+        .card2 {
+            display: flex;
+            flex-direction: column;
+            border: 5px solid #E1E1E1;
+            border-radius: 10px;
+            padding: 1px 2rem;
+            background-color: white;
+        }
+
+        .card3 {
+            display: flex;
+            flex-direction: column;
+            border: 5px solid #E1E1E1;
+            border-radius: 10px;
+            margin: 0 .4rem;
+            padding: 10px 1rem 0 1.3rem;
+            background-color: white
+        }
+
+        .card3 .btn-cliqueAqui {
+            margin: 0 0 1.1rem 11rem !important;
+        }
+
+        .card3 p {
+            margin-bottom: 6rem;
+        }
+
+        .card4 {
+            display: flex;
+            flex-direction: column;
+            border: 5px solid #E1E1E1;
+            border-radius: 10px;
+            padding: 1px 2.4rem 0 3rem;
+            margin: 0 0 0 .5rem;
+            background-color: white
+        }
+
+        .card4 .btn-cliqueAqui {
+            margin: 0 0 1.1rem 11rem !important;
+        }
+
+        .card4 p {
+            margin-bottom: 9.9rem !important;
+        }
+
+        .botoes {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+            text-align: center;
+            margin: 0 0 0 8rem
+        }
+
+
+        .btn-header {
+            display: flex;
+            margin: 0 2rem
+        }
+
+        .btn-cliqueAqui {
+            width: 20%;
+            text-decoration: none;
+            color: white;
+            background-color: #6C1F77;
+            border-radius: 15px;
+            padding: 10px 30px;
+            margin-bottom: 1.1rem;
+            text-align: center;
+        }
+
+        .btn-internado {
+            text-decoration: none;
+            color: white;
+            background-color: #6C1F77;
+            border-radius: 15px;
+            padding: 10px 10px;
+            width: 68%;
+            margin-top: 2.1rem;
+        }
+
+        .btn-externo {
+            text-decoration: none;
+            color: white;
+            background-color: #6C1F77;
+            border-radius: 15px;
+            padding: 10px 10px;
+            width: 68%;
+            margin: 20px 0
+        }
+
+        @media only screen and (max-width: 1024px) {
+            h1 {
+                font-size: 1rem;
+            }
+
+
+            header {
+                padding: 26 0 0 0 !important;
+            }
+
+            .nav-links {
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .card1 {
+                margin: 1rem;
+                align-items: start;
+                padding: 1px 2.4rem 0 1.5rem;
+            }
+
+            .card2 {
+                margin: 1rem;
+                align-items: start;
+                padding: 1px 2.4rem 0 1.5rem;
+            }
+
+            .card3 {
+                margin: 1rem !important;
+                align-items: start;
+
+            }
+
+            .card3 p {
+                margin-bottom: 1rem !important;
+            }
+
+            .card4 {
+                margin: 1rem;
+                align-items: start;
+                padding: 1px 2.4rem 0 1.5rem;
+            }
+
+            .card4 p {
+                margin-bottom: 2rem !important;
+            }
+
+
+            .card-row {
+                flex-direction: column !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                margin: 0 !important;
+            }
+
+
+
+            .botoes {
+                margin: 0 !important;
+            }
+
+            .cabecalho-resultados,
+            .cabecalho-agendamento {
+                margin: 10px 0;
+            }
+
+            .btn-header {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin: 1rem;
+            }
+
+            .btn-cliqueAqui {
+                width: 50%;
+            }
+
+            .card3 .btn-cliqueAqui,
+            .card4 .btn-cliqueAqui {
+                margin: 20px 0 !important;
+            }
+
+            .phone {
+                margin: 1rem 0 !important;
+            }
+
+            .btn-internado {
+                width: 100%;
+            }
+
+            .btn-externo {
+                width: 100%;
+            }
+
+        }
+    </style>
+    <header style="background-color: white;padding:26px 0;margin:0;width: 100%;z-index: 100;">
+        <div class="nav-links">
+            <a href=""><img src="https://www.americasmedicinaesaude.com.br/imgs/logo.png" alt="logo header"
+                    height="50"></a>
+            <div class="btn-header">
+                <div class="cabecalho-agendamento">
+                    <a href="https://agendamento-americas.netlify.app/" target="_blank" style="text-decoration: none;">
+                        <p>Agendamento</p>
+                    </a>
+                </div>
+                <div class="cabecalho-resultados">
+                    <a href="tel:11-2177-2500" target="_blank" style="text-decoration: none;color:white;">
+                        <p>Resultados</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="cards">
+            <div class="card-row" style="display: flex;align-items: center;justify-content: center;">
+                <div class="card1">
+                    <h1 style="color: #646567;font-weight:bold;">Exames Anatomopatológicos <br>
+                        ou Citologia</h1>
+                    <p style="color: #646567;">Os Exames Anatomopatológicos são realizados nos fragmentos <br>
+                        de tecido ou órgão retirados por meio de biópsias, cirurgias, <br>
+                        endoscopias, punções aspirativas com agulha grossa e outros. <br>
+                        Aqui também se encontram os exames imuno-histoquímimcos,<br>
+                        FISH (hibridização in situ fluorescente) e genéticos.<br>
+                        Citologia compreende a análise das células presentes nos fluidos<br>
+                        e secreções orgânicas.</p>
+                    <a class="btn-cliqueAqui" href="https://anatomiapatologica.uhgbrasil.com.br"
+                        target="_blank"><em>Clique
+                            Aqui</em></a>
+                </div>
+                <div class="card2">
+                    <h1 style="color: #646567;font-weight:bold;">Exames de Análises <br>
+                        Clínicas/Laboratoriaisa</h1>
+                    <p style="color: #646567">Os Exames de Análises Clínicas / Laboratoriais são realizados para<br>
+                        orientar o médico e auxiliar no diagnóstico e tratamento das doenças.<br>
+                        Os tipos mais comuns avaliam o sangue, as fezes e a urina.</p>
+                    <div class=" botoes">
+                        <a class="btn-internado" href=""><em>Paciente
+                                Internado/Pronto-Socorro</em></a>
+                        <a class="btn-externo" href=""><em>Paciente
+                                Ambulatorial/Externo</em></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-row"
+                style="display: flex;align-items: center;justify-content: center;margin:.7rem 0 0 14px;">
+                <div class="card3">
+                    <h1 style="color: #646567;font-weight:bold;">Resultados de Exames de Imagem </h1>
+                    <p style="color: #646567;">Os exames por imagem possuem muitos benefícios: auxiliam no <br>
+                        diagnóstico precoce de doenças e têm alta definição e precisão. <br>
+                        Visualize as imagens dos seus exames sem sair de casa.<br>
+                        Tudo pelo smartphone, computador ou tablet.<br>
+                        Basta preencher seu login e senha.</p>
+                    <a class="btn-cliqueAqui" href=""><em>Clique
+                            Aqui</em></a>
+                </div>
+                <div class="card4">
+                    <h1 style="color: #646567;font-weight:bold;">Covid-19 - RT-PCR</h1>
+                    <p style="color: #646567;margin-bottom: 5rem;">O teste de RT-PCR é considerado o padrão ouro pela
+                        Organização <br>
+                        Mundial da Saúde para a detecção da covid-19.</p>
+                    <a class="btn-cliqueAqui" href=""><em>Clique
+                            aqui</em></a>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
